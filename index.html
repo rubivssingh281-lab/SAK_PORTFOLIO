@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Saksham Singh | 3D CyberSec Portfolio</title>
+  <meta name="description"
+    content="Saksham Singh – 3D Cybersecurity Portfolio: Offensive Security, Penetration Testing, Secure Development with interactive 3D elements.">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="importmap">
+{
+    "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+    }
+}
+</script>
+</head>
+<script type="module" src="three-scene.js"></script>
+
+<body>
+  <div id="three-container"></div>
+  <div id="loader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <nav id="navbar">
+    <div class="nav-logo"><i class="fas fa-shield-haltered"></i>Saksham Singh | My Portfolio</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" data-nav>Home</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#projects" data-nav>Work</a></li>
+      <li><a href="#experience" data-nav>Experience</a></li>
+      <li><a href="#mockups" data-nav>Mockups</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal"><i class="fas fa-terminal"></i>Cybersecurity · Blue Teaming · Web Developer
+      </div>
+      <h1 class="hero-title reveal" style="transition-delay:0.1s">
+        <span>Saksham &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+        <span class="glow">Singh</span>
+      </h1>
+      <p class="hero-subtitle reveal" style="transition-delay:0.2s">Cybersecurity Intern | Penetration Testing |
+        Secure Code</p>
+      <div class="hero-buttons reveal" style="transition-delay:0.3s">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-cube"></i> View Projects</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Start Collaboration</a>
+      </div>
+      <div style="margin-top:1.5rem; font-size:0.9rem; color: var(--text-muted);">
+        <i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Ghaziabad, India &nbsp;|&nbsp;
+        <i class="fas fa-envelope"></i> rubivssingh281@gmail.com
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="parallax-section">
+    <div class="container">
+      <span class="section-label reveal">Technical Arsenal</span>
+      <h2 class="section-title reveal">Core Competencies<br>& Tools</h2>
+      <p class="section-desc reveal">Languages, frameworks, and offensive security tooling that form my daily driver.
+      </p>
+      <div class="services-grid">
+        <div class="service-card reveal-scale" data-mouse-track>
+          <span class="service-icon"><i class="fas fa-code"></i></span>
+          <h3>Languages & Development</h3>
+          <p>Python, Java, C, JavaScript, React/Node.js, SQL, Git/Github — robust full‑stack foundation.</p>
+        </div>
+        <div class="service-card reveal-scale" data-mouse-track style="transition-delay:0.1s">
+          <span class="service-icon"><i class="fas fa-shield-virus"></i></span>
+          <h3>Cybersecurity Stack</h3>
+          <p>Kali Linux, Metasploit, Burp Suite, Nmap, Wireshark — practiced in offensive environments.</p>
+        </div>
+        <div class="service-card reveal-scale" data-mouse-track style="transition-delay:0.2s">
+          <span class="service-icon"><i class="fas fa-graduation-cap"></i></span>
+          <h3>Education & Certifications</h3>
+          <p>B.Tech CSE (Data Science) · Cisco Cybersecurity, Infosys Python/Java, SIH Finalist 2025.</p>
+        </div>
+        <div class="service-card reveal-scale" data-mouse-track style="transition-delay:0.3s">
+          <span class="service-icon"><i class="fas fa-brain"></i></span>
+          <h3>Methodologies</h3>
+          <p>Secure coding, penetration testing lifecycle, Blue team simulations, SLM automation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="parallax-section">
+    <div class="container">
+      <span class="section-label reveal">Featured Work</span>
+      <h2 class="section-title reveal">Projects that<br>demonstrate impact</h2>
+      <p class="section-desc reveal">Open‑source tools, security research, and full‑stack applications built with
+        purpose.</p>
+      <div class="projects-grid">
+        <div class="project-card reveal-scale" data-tilt data-tilt-max="8">
+          <div class="project-card-inner">
+            <div class="project-img-placeholder"><i class="fas fa-user-secret"></i></div>
+            <div class="project-info">
+              <span class="tag">Cybersecurity Tool</span>
+              <h3>Web-Id-Changer</h3>
+              <p>CLI tool for MAC & browser fingerprint spoofing, automated network cycling.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal-scale" data-tilt data-tilt-max="8" style="transition-delay:0.1s">
+          <div class="project-card-inner">
+            <div class="project-img-placeholder"><i class="fas fa-database"></i></div>
+            <div class="project-info">
+              <span class="tag">Secure Development</span>
+              <h3>SQL/XSS Secure Login</h3>
+              <p>Parameterized queries, CSRF tokens, bcrypt — hardened against OWASP Top 10.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal-scale" data-tilt data-tilt-max="8" style="transition-delay:0.2s">
+          <div class="project-card-inner">
+            <div class="project-img-placeholder"><i class="fas fa-graduation-cap"></i></div>
+            <div class="project-info">
+              <span class="tag">Full‑Stack Platform</span>
+              <h3>Alumno Connect (SIH 2025)</h3>
+              <h3>My Portfolio</h3>
+              <p>React, Node.js, MongoDB — real‑time chat & mentorship platform for institutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Rotating Mockups -->
+  <section id="mockups" class="parallax-section">
+    <div class="container">
+      <span class="section-label reveal">Interactive Showcase</span>
+      <h2 class="section-title reveal">Rotating Design<br>Mockups</h2>
+      <p class="section-desc reveal">A 3D carousel of my core projects — drag? No, just watch them orbit.</p>
+      <div class="reveal showcase-3d">
+        <canvas id="mockup-canvas"></canvas>
+      </div>
+      <p style="text-align:center; margin-top:1rem; color:var(--text-muted);">⚡ Web-Id-Changer · Secure Login · Alumno
+        Connect · Voice Assistant · Pentest Suite · SIH 2025</p>
+    </div>
+  </section>
+
+  <!-- Experience Section (replaces Testimonials) -->
+  <section id="experience" class="parallax-section">
+    <div class="container">
+      <span class="section-label reveal">Background</span>
+      <h2 class="section-title reveal">Experience &<br>Education</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <p class="quote"><i class="fas fa-briefcase" style="color:var(--accent); margin-right:8px;"></i>
+            <strong>B.Tech CSE (Data Science)</strong> — ABES Institute of Technology, Ghaziabad
+          </p>
+          <p class="role">2024 – 2028 · Current GPA: 7.3/10 · Relevant: Cyber Security, ML, DBMS</p>
+        </div>
+        <div class="testimonial-card reveal" style="transition-delay:0.1s">
+          <p class="quote"><i class="fas fa-shield-alt" style="color:var(--accent); margin-right:8px;"></i>
+            <strong>Cybersecurity Intern</strong> @ Ediglobe India, Bangalore
+          </p>
+          <p class="role">Feb 2026 (6 weeks) — Identified 15+ critical vulnerabilities, automated recon scripts,
+            delivered remediation reports.</p>
+        </div>
+        <div class="testimonial-card reveal" style="transition-delay:0.2s">
+          <p class="quote"><i class="fas fa-certificate" style="color:var(--accent); margin-right:8px;"></i>
+            <strong>Certifications</strong>
+          </p>
+          <p class="role">Cisco Cybersecurity, Infosys Python & Java Dev, SIH Finalist 2025 — continuous upskilling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <span class="section-label reveal">Get In Touch</span>
+      <h2 class="section-title reveal">Let’s connect in<br>the Cyber Realm</h2>
+      <p class="section-desc reveal" style="margin:0 auto 28px;">Collaboration, security research, or Blue teaming
+        engagements — reach out.</p>
+      <a href="mailto:rubivssingh281@gmail.com" class="contact-email reveal">rubivssingh281@gmail.com</a>
+      <div style="margin-top:2rem;">
+        <button id="copyEmailBtn" class="btn btn-outline" style="margin-right:12px;"><i class="fas fa-copy"></i> Copy
+          Email</button>
+        <a href="https://www.linkedin.com/in/saksham-singh-6371133ab?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/rubivssingh281-lab" class="btn btn-outline"><i class="fab fa-github"></i> Github</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Saksham Singh · Cybersecurity Portfolio | Designed with my love for the cosmos</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+    </script>
+
+  <!-- GSAP, NAV, TILT, REVEAL (existing functionality) -->
+  <script>
+    (function () {
+      const loader = document.getElementById('loader');
+      window.addEventListener('load', () => {
+        setTimeout(() => { loader.classList.add('hidden'); document.body.style.overflow = ''; }, 800);
+      });
+      document.body.style.overflow = 'hidden';
+      gsap.registerPlugin(ScrollTrigger);
+      const navbar = document.getElementById('navbar');
+      const mobileToggle = document.getElementById('mobileToggle');
+      const navLinks = document.getElementById('navLinks');
+      const navAnchors = document.querySelectorAll('[data-nav]');
+      function updateNavbar() { const scrollY = window.scrollY; navbar.classList.toggle('shrunk', scrollY > 60); }
+      window.addEventListener('scroll', updateNavbar, { passive: true }); updateNavbar();
+      mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); mobileToggle.classList.toggle('active'); });
+      navAnchors.forEach(a => a.addEventListener('click', () => { navLinks.classList.remove('active'); mobileToggle.classList.remove('active'); }));
+      const revealEls = document.querySelectorAll('.reveal, .reveal-scale');
+      const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } }); }, { threshold: 0.18, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => revealObserver.observe(el));
+      const parallaxSections = document.querySelectorAll('.parallax-section');
+      parallaxSections.forEach(section => {
+        gsap.fromTo(section, { y: 40 }, { y: -40, ease: 'none', scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: 1.2, invalidateOnRefresh: true } });
+      });
+      gsap.fromTo('.hero-content', { y: 0 }, { y: -60, ease: 'none', scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: 1 } });
+      gsap.fromTo('.service-card', { y: 80, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.12, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: '.services-grid', start: 'top 82%', toggleActions: 'play none none none' } });
+      gsap.fromTo('.project-card', { y: 90, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, stagger: 0.14, duration: 0.85, ease: 'power3.out', scrollTrigger: { trigger: '.projects-grid', start: 'top 82%', toggleActions: 'play none none none' } });
+      gsap.fromTo('.testimonial-card', { y: 60, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.12, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: '.testimonials-grid', start: 'top 84%', toggleActions: 'play none none none' } });
+      const tiltCards = document.querySelectorAll('[data-tilt]');
+      tiltCards.forEach(card => {
+        const inner = card.querySelector('.project-card-inner');
+        const maxTilt = parseFloat(card.dataset.tiltMax) || 8;
+        let currentRotX = 0, currentRotY = 0, targetRotX = 0, targetRotY = 0;
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left, y = e.clientY - rect.top;
+          const centerX = rect.width / 2, centerY = rect.height / 2;
+          targetRotY = ((x - centerX) / centerX) * maxTilt;
+          targetRotX = -((y - centerY) / centerY) * maxTilt;
+          inner.classList.add('glow-active');
+        });
+        card.addEventListener('mouseleave', () => { targetRotX = 0; targetRotY = 0; inner.classList.remove('glow-active'); });
+        function smoothTilt() {
+          currentRotX += (targetRotX - currentRotX) * 0.1;
+          currentRotY += (targetRotY - currentRotY) * 0.1;
+          inner.style.transform = `perspective(1000px) rotateX(${currentRotX}deg) rotateY(${currentRotY}deg) scale3d(1.02,1.02,1.02)`;
+          requestAnimationFrame(smoothTilt);
+        }
+        smoothTilt();
+      });
+      const mouseTrackCards = document.querySelectorAll('[data-mouse-track]');
+      mouseTrackCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width) * 100;
+          const y = ((e.clientY - rect.top) / rect.height) * 100;
+          card.style.setProperty('--mx', x + '%');
+          card.style.setProperty('--my', y + '%');
+        });
+      });
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            const navH = navbar.offsetHeight;
+            const targetPos = target.getBoundingClientRect().top + window.scrollY - navH - 10;
+            window.scrollTo({ top: targetPos, behavior: 'smooth' });
+          }
+        });
+      });
+      document.getElementById('copyEmailBtn')?.addEventListener('click', () => {
+        navigator.clipboard.writeText('rubivssingh281@gmail.com');
+        alert('📧 Email copied!');
+      });
+      let resizeTimeout;
+      window.addEventListener('resize', () => { clearTimeout(resizeTimeout); resizeTimeout = setTimeout(() => { ScrollTrigger.refresh(); }, 250); });
+    })();
+  </script>
+</body>
+
+</html>
