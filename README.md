@@ -1,7 +1,6 @@
-# SAK_PORTFOLIO
-Explore a cosmic portfolio with an interactive solar system, textured planets, spinning galaxies, black holes, and a glowing supernova. Click planets or black holes to zoom in; watch shooting stars, asteroid belts, and rotating mini galaxies. Built with Three.js, GSAP, and custom particle effects for an immersive web experience.
-
 content = """# 🌌 Saksham Singh - 3D Cosmic Portfolio
+
+Explore a cosmic portfolio with an interactive solar system, textured planets, spinning galaxies, black holes, and a glowing supernova. Click planets or black holes to zoom in; watch shooting stars, asteroid belts, and rotating mini galaxies. Built with Three.js, GSAP, and custom particle effects for an immersive web experience.
 
 A visually stunning, interactive 3D web portfolio designed to showcase my skills in **Cybersecurity, Penetration Testing, and Full-Stack Development**. Built with modern web technologies, this portfolio features an immersive cosmic environment complete with an interactive solar system, spinning galaxies, black holes, and custom particle effects.
 
