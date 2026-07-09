@@ -42,3 +42,55 @@ A visually stunning, interactive 3D web portfolio designed to showcase my skills
 ---
 
 ## 📂 Project Structure
+
+```text
+├── index.html         # Main HTML structure, layout, UI text, and inline GSAP logic.
+├── Style.css          # Core stylesheet, CSS variables, animations, and responsive design.
+├── three-scene.js     # Three.js logic (lighting, camera, rendering, planets, particles, interaction).
+├── images/            # Directory for planet and celestial textures (e.g., earth, mars, jupiter).
+└── logo.png           # Portfolio favicon and branding asset.
+```
+
+🚀 Local Setup & Installation
+Because this project uses ES modules (<script type="module">) and loads external textures via Three.js, it must be run on a local web server to avoid CORS (Cross-Origin Resource Sharing) errors.
+
+Option 1: Using VS Code (Recommended)
+
+Install the Live Server extension.
+
+Open the project folder in VS Code.
+
+Right-click index.html and select "Open with Live Server".
+
+Option 2: Using Python
+
+Ensure Python is installed on your machine.
+
+Open your terminal/command prompt, navigate to the project directory, and run:
+
+Bash
+# For Python 3.x
+python -m http.server 8000
+Open your browser and navigate to http://localhost:8000.
+
+Option 3: Using Node.js (http-server)
+
+Install http-server globally: npm install -g http-server
+
+Run the server in the project directory: http-server
+
+Access the provided local URL in your browser.
+
+🤝 Let's Connect
+I am currently open to collaboration, security research, and blue teaming engagements.
+
+Email: rubivssingh281@gmail.com
+
+LinkedIn: Saksham Singh
+
+GitHub: rubivssingh281-lab
+
+Location: Ghaziabad, India
+
+Designed with my love for the cosmos and a passion for securing the web. 🚀
+"""
